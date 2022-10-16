@@ -66,7 +66,8 @@ print(var1)
 
 
 #%% Cell #6
-""" ... and sometimes by reference
+""" ... and sometimes by reference (although some people will argue that
+    there is no such thing as "by-value" in Python)
 """
 var0 = ['a', 'b', 'c']
 var1 = var0

@@ -74,3 +74,26 @@ strs1 = ['x', 'y', 'z']
 res = [s0 + s1 for (s0, s1) in zip(strs0, strs1)]
 
 print(res)
+
+
+#%%
+""" Dictionaries
+"""
+
+#%% Cell #6
+""" Dictionaries are all about key:value pairs
+"""
+consts = {'e' : 2.7183, 'pi' : 3.1416, 'golden ratio' : 1.618}
+print(consts.keys())
+
+
+#%% Cell 7
+""" You can index dictionaries using keys -- this is similar to indexing arrays
+    using integers
+"""
+print(consts['pi'])
+consts['pi'] = 3.2     # For those in Indiana, USA
+print(consts['pi'])
+
+
+
