@@ -1,21 +1,20 @@
 # Install miniconda
 
-# create MNE environment
-conda create --override-channels --channel=conda-forge -n mne mne
-
-# Install spyder-kernels
-conda activate mne
-conda install spyder‑kernels=2.3
+# Create MNE environment
+The environment contains mne + some useful packages (numpy, matplotlib, etc). Change to the folder that contains the environment.yml file and run  
+`conda env create`
 
 # Install Spyder
-conda create -n spyder spyder numpy scipy pandas matplotlib sympy cython PyQtWebEngine
+Install the spyder package + some optional dependencies recommended by the author.  
+`conda create -n spyder spyder numpy scipy pandas matplotlib sympy cython PyQtWebEngine`
 
 # Setup Spyder to use python interpreter from the mne environment
 
 # Install FreeSurfer
-Copy freesurfer-linux-ubuntu20_amd64-7.3.2.tar.gz to ~/opt
-cd ~/opt
-tar -zxpf freesurfer-linux-ubuntu20_amd64-7.3.2.tar.gz
-Add the following two lines to ~/.bashrc
-export FREESURFER_HOME=$HOME/opt/freesurfer
-source $FREESURFER_HOME/SetUpFreeSurfer.sh
+Download freesurfer-linux-ubuntu22_amd64-7.3.2.tar.gz to ~/opt  
+`cd ~/opt`  
+`tar -zxpf freesurfer-linux-ubuntu22_amd64-7.3.2.tar.gz`  
+
+Add the following two lines to ~/.bashrc  
+`export FREESURFER_HOME=$HOME/opt/freesurfer`  
+`source $FREESURFER_HOME/SetUpFreeSurfer.sh`

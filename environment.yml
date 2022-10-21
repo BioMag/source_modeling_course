@@ -1,0 +1,9 @@
+name: mne
+channels:
+- conda-forge
+dependencies:
+- mne
+- numpy
+- scipy
+- matplotlib
+- spyder-kernels=2.3
