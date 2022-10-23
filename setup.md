@@ -28,6 +28,10 @@ Doesn't work on Windows. Download freesurfer-linux-ubuntu22_amd64-7.3.2.tar.gz t
 `cd ~/opt`  
 `tar -zxpf freesurfer-linux-ubuntu22_amd64-7.3.2.tar.gz`  
 
-Add the following two lines to ~/.bashrc  
+Move the subjects dir to ~/freesurfer_subjects  
+`mv ~/opt/freesurfer/subjects ~/freesurfer_subjects`
+
+Add the following lines to ~/.bashrc  
 `export FREESURFER_HOME=$HOME/opt/freesurfer`  
+`export SUBJECTS_DIR=$HOME/freesurfer_subjects`
 `source $FREESURFER_HOME/SetUpFreeSurfer.sh`
