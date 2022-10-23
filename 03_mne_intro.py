@@ -5,7 +5,7 @@ The basics of MNE
 """
 
 #%% Cell #0
-""" MNE is Python package
+""" MNE is a Python package.
 """
 import mne              # Let's load MNE
 print(mne.__version__)  # And check it's version
@@ -15,12 +15,15 @@ print(mne.__version__)  # And check it's version
 """ Let's load some EEG data
 """
 FNAME = '~/storage/Data/mne_data/MNE-ERP-CORE-data/ERP-CORE_Subject-001_Task-Flankers_eeg.fif'
-raw_data_obj = mne.io.Raw(FNAME, preload=True)
+
+# Construct an object raw_data_obj of the class mne.io.Raw
+raw_data_obj = mne.io.Raw(FNAME, preload=True)      # Note the named parameter 'preload'!
 
 
 #%% Cell #2
 """ Let's also look at the data
 """
+# Call method plot() on raw_data_obj
 raw_data_obj.plot()
 
 
