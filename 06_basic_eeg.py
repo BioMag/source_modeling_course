@@ -58,13 +58,21 @@ print(sctl_epochs)  # Only the 'stimulus/compatible/target_left' epochs
 
 #%% Cell #4
 """ Note that we can delete events by clicking the traces (unlike with the raw
-    data, they are deleted, not just marked).
+    data, they are deleted, not just marked) ... 
 """
 print(sctl_epochs)
 sctl_epochs.plot()  # Delete some epochs here
+
+
+#%% Cell #5
+""" ... and verify that the clicked epochs were deleted
+"""
+print('\n')
 print(sctl_epochs)
 
 
-
-
-evoked = epochs['stimulus'].average()
+#%% Cell #6
+""" Finally, let's average all the 'stimulus/...' epochs and look at the ERPs
+"""
+evoked = s_epochs.average()
+evoked.plot()   # Note that the bad channels are excluded
