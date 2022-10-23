@@ -26,7 +26,7 @@ raw.plot()
 import os
 import nibabel as nib
 # Remember to replace 
-MRI_FNAME = '%s/source_modeling_course/data/MEG/MRI.mgz' % os.getenv('HOME')
+MRI_FNAME = '%s/source_modeling_course/data/MEG/MRI.mgz' % os.getenv('HOME') # os.getenv('HOME') is a kludge
 mri = nib.load(MRI_FNAME)
 mri.orthoview()
 
