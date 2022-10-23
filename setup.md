@@ -33,5 +33,5 @@ Move the subjects dir to ~/freesurfer_subjects
 
 Add the following lines to ~/.bashrc  
 `export FREESURFER_HOME=$HOME/opt/freesurfer`  
-`export SUBJECTS_DIR=$HOME/freesurfer_subjects`
+`export SUBJECTS_DIR=$HOME/freesurfer_subjects`  
 `source $FREESURFER_HOME/SetUpFreeSurfer.sh`
