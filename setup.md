@@ -24,9 +24,14 @@ Setup Spyder to plot graphs in separate windows: In Spyder: Tools -> Preferences
 Restart Spyder.  
 
 # Install FreeSurfer
-Doesn't work on Windows. Download freesurfer-linux-ubuntu22_amd64-7.3.2.tar.gz to ~/opt  
+Doesn't work on Windows. Install tcsh  
+`sudo apt install tcsh`  
+
+Download freesurfer-linux-ubuntu22_amd64-7.3.2.tar.gz to ~/opt  
 `cd ~/opt`  
 `tar -zxpf freesurfer-linux-ubuntu22_amd64-7.3.2.tar.gz`  
+
+Copy the .license file to ~/opt/freesurfer  
 
 Move the subjects dir to ~/freesurfer_subjects  
 `mv ~/opt/freesurfer/subjects ~/freesurfer_subjects`
