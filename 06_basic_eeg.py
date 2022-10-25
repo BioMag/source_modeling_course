@@ -9,7 +9,7 @@ MNE - basic operations on EEG file - segmetation/averaging
 """ Load the data
 """
 import mne
-INP_FNAME = '~/scratch/ERP-CORE_Subject-001_Task-Flankers_eeg_mark_bad_filt.fif'
+INP_FNAME = '~/scratch/Flankers_mark_bad_filt.fif'
 raw_filtered = mne.io.Raw(INP_FNAME, preload=True)
 
 

@@ -64,9 +64,7 @@ brain.add_annotation('aparc.a2009s', borders=False)
 #%% Cell #4
 """ Now we need to create BEMs ...
 """
-mne.bem.make_flash_bem('sample')
-# You cal also try mne.bem.make_watershed_bem('sample'), but this one takes
-# longer
+mne.bem.make_watershed_bem('sample')
 
 """ ... and look at them
 """
@@ -74,8 +72,6 @@ mne.viz.plot_bem('sample')
 
 
 #%% Cell #5
-""" Next, we need to coregister MRI and MEG. Run
-    > mne coreg
-    from the mne conda environment and save the results to
-    ~/scratch/sample_audvis_raw-trans.fif
+""" Next, we need to coregister MRI and MEG
 """
+mne.gui.coregistration()

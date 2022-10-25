@@ -8,7 +8,7 @@ MNE - basic operations on EEG file - data review/cleaning
 """ Load the data
 """
 import mne
-FNAME = '~/storage/Data/mne_data/MNE-ERP-CORE-data/ERP-CORE_Subject-001_Task-Flankers_eeg.fif'
+FNAME = '~/source_modeling_course/data/EEG/Flankers.fif'
 raw_data_obj = mne.io.Raw(FNAME, preload=True)
 
 
@@ -45,7 +45,7 @@ raw_data_obj.plot()
     to run this code.
 """
 import mne
-INP_FNAME = '~/storage/Data/mne_data/MNE-ERP-CORE-data/ERP-CORE_Subject-001_Task-Flankers_eeg.fif'
+INP_FNAME = '~/source_modeling_course/data/EEG/Flankers.fif'
 
 raw_data_obj = mne.io.Raw(INP_FNAME, preload=True)
 raw_data_obj.plot()
@@ -60,7 +60,7 @@ raw_data_obj.plot()
 """ Save the modified file 
 """
 # Append the '_marked_bad' to the previous file name
-OUT_FNAME = '~/scratch/ERP-CORE_Subject-001_Task-Flankers_eeg_mark_bad.fif'
+OUT_FNAME = '~/scratch/Flankers_mark_bad.fif'
 raw_data_obj.save(OUT_FNAME)
 
 """ Check that the file has been created

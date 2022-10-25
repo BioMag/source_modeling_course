@@ -8,7 +8,7 @@ MNE - basic operations on EEG file - filtering
 """ Load the data
 """
 import mne
-INP_FNAME = '~/scratch/ERP-CORE_Subject-001_Task-Flankers_eeg_mark_bad.fif'
+INP_FNAME = '~/scratch/Flankers_mark_bad.fif'
 raw_data_obj = mne.io.Raw(INP_FNAME, preload=True)
 
 
@@ -28,5 +28,5 @@ raw_filtered.plot()
 #%% Cell #2
 """ Save the filtered data
 """
-OUT_FNAME = '~/scratch/ERP-CORE_Subject-001_Task-Flankers_eeg_mark_bad_filt.fif'
+OUT_FNAME = '~/scratch/Flankers_mark_bad_filt.fif'
 raw_filtered.save(OUT_FNAME)

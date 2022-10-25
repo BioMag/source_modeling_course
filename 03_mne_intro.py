@@ -14,7 +14,7 @@ print(mne.__version__)  # And check it's version
 #%% Cell #1
 """ Let's load some EEG data
 """
-FNAME = '~/storage/Data/mne_data/MNE-ERP-CORE-data/ERP-CORE_Subject-001_Task-Flankers_eeg.fif'
+FNAME = '~/source_modeling_course/data/EEG/Flankers.fif'
 
 # Construct an object raw_data_obj of the class mne.io.Raw
 raw_data_obj = mne.io.Raw(FNAME, preload=True)      # Note the named parameter 'preload'!

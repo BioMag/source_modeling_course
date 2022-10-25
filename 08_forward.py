@@ -50,7 +50,7 @@ fwd = mne.make_forward_solution(RAW_FNAME, trans=TRANS_FNAME, src=src, bem=bem,
 
 
 #%% Cell #4
-""" UNDER CONSTRUCTION
+""" reconstruction
 """
 raw = mne.io.Raw(RAW_FNAME, preload=True)
 
