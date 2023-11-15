@@ -21,13 +21,15 @@ raw_data_obj = mne.io.Raw(FNAME, preload=True)
 """  Plot spectra
 """
 import numpy as np
-raw_data_obj.plot_psd(tmax=np.inf, fmax=80, average=False)
+import matplotlib
+matplotlib.use('qtagg')
+raw_data_obj.compute_psd(tmax=np.inf, fmax=80, average=False).plot()
 
 #%% Cell #2
 """ Let's try different spectral resolutions
 """
-raw_data_obj.plot_psd(tmax=np.inf, fmax=80, average=False, n_fft=128)
-raw_data_obj.plot_psd(tmax=np.inf, fmax=80, average=False, n_fft=1024)
+raw_data_obj.compute_psd(tmax=np.inf, fmax=80, average=False, n_fft=128).plot()
+raw_data_obj.compute_psd(tmax=np.inf, fmax=80, average=False, n_fft=1024).plot()
 
 
 #%% Cell #3
@@ -39,24 +41,20 @@ raw_data_obj.plot()
 """
 
 
-#%% Cell #4 - run outside of Spyder!
+#%% Cell #4
 """ Let's fix the problem by manually marking bad channels and segments.
-    Unfortunately, because of a Spyder bug, we'll have to use something else
-    to run this code.
+    NOTE: if there are any problems running thih code, try running it outside
+    of Spyder.
 """
-import mne
-INP_FNAME = '~/source_modeling_course/data/EEG/Flankers.fif'
-
-raw_data_obj = mne.io.Raw(INP_FNAME, preload=True)
 raw_data_obj.plot()
 
 
-#%% Cell #5 - run outside of Spyder!
+#%% Cell #5
 """ Check that the raw_data_obj has been updated. Any ideas how?
 """
 
 
-#%% Cell #6 - run outside of Spyder!
+#%% Cell #6
 """ Save the modified file 
 """
 # Append the '_marked_bad' to the previous file name

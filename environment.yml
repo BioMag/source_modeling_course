@@ -6,4 +6,4 @@ dependencies:
 - numpy
 - scipy
 - matplotlib
-- spyder-kernels=2.3
+- spyder-kernels=2.4

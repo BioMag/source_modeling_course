@@ -46,7 +46,7 @@ for c in my_list:
 
 
 # %%
-""" Powerfool iterating tools allow some cool stuff
+""" Powerful iterating tools allow some cool stuff
 """
 
 
@@ -94,6 +94,12 @@ print(consts.keys())
 print(consts['pi'])
 consts['pi'] = 3.2     # For those in Indiana, USA
 print(consts['pi'])
+
+
+#%% Cell 8
+""" Use .keys() method to get a list of keys for an object
+"""
+consts.keys()
 
 
 

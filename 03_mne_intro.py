@@ -34,8 +34,10 @@ print(raw_data_obj.info)
 """ Explore raw_data_obj and raw_data_obj.info using spyder:
     1. Use TAB after . (e.g. type raw_data_obj. in the console and press TAB)
        to get available methods/attributes
-    2. Explore variables in the variable explorer
-    3. Use online help -- try using Ctrl-I on various things
+    2. Use .keys() method (e.g. raw_data_obj.info.keys()) to get the list of
+       keys that can be used to query the object
+    3. Explore variables in the variable explorer
+    4. Use online help -- try using Ctrl-I on various things
 
     Can you figure out the subject's sex?
 """
