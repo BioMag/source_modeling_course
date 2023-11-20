@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Working with FreeSurfer - tet's take care of the anatomy
+Working with FreeSurfer - let's take care of the anatomy
 """
 
 
