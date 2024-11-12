@@ -76,3 +76,5 @@ print(sctl_epochs)
 """
 evoked = s_epochs.average()
 evoked.plot()   # Note that the bad channels are excluded
+
+evoked.plot_topo()

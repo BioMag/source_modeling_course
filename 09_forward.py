@@ -8,10 +8,27 @@ Forward modeling
 #%% Cell #0
 """ First, we need to coregister MRI and MEG. Save the coregistration to the
     sample_audvis_raw-trans.fif in the scratch folder.
+    https://mne.tools/1.7/auto_tutorials/forward/20_source_alignment.html#defining-the-headmri-trans-using-the-gui
 """
 import mne
 mne.gui.coregistration()
 
+#%% see aligment with MNE Python,
+# https://mne.tools/1.7/auto_tutorials/forward/20_source_alignment.html#understanding-coordinate-frames
+# Where are the "raw" and "trans"?
+fig = mne.viz.plot_alignment(
+    raw.info,
+    trans=trans,
+    subject="sample",
+ #   subjects_dir=subjects_dir,
+    surfaces="head-dense",
+    show_axes=True,
+    dig=True,
+    eeg=[],
+    meg="sensors",
+    coord_frame="meg",
+    mri_fiducials="estimated",
+)
 
 #%% Cell #1
 """ Create the source space

@@ -29,4 +29,4 @@ raw_filtered.plot()
 """ Save the filtered data
 """
 OUT_FNAME = '~/scratch/Flankers_mark_bad_filt.fif'
-raw_filtered.save(OUT_FNAME)
+raw_filtered.save(OUT_FNAME,overwrite=True)

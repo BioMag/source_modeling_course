@@ -67,7 +67,8 @@ print(var1)
 
 #%% Cell #6
 """ ... and sometimes by reference (although some people will argue that
-    there is no such thing as "by-value" in Python)
+    there is no such thing as "by-value" in Python).
+    For more, read on mutable vs immutable data type
 """
 var0 = ['a', 'b', 'c']
 var1 = var0
